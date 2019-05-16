@@ -27,6 +27,8 @@ public class TestSuite1 {
 		driver = BrowserUtils.intailizeBrowser(prop, driver);
 		AppUtils.invokeApplication(prop, driver);
 		ElementUtils.click(driver, By.id(""));
+		ElementUtils.type(driver, By.id(""), "dfgfdghfrgh");
+		ElementUtils.click(driver, By.id(""));
 	}
 
 	@After
