@@ -16,7 +16,7 @@ public class ElementUtils {
 		findObject(driver, locator).click();
 	}
 
-	public void type(WebDriver driver, By locator, String text) throws Exception {
+	public static void type(WebDriver driver, By locator, String text) throws Exception {
 		findObject(driver, locator).sendKeys(text);
 	}
 

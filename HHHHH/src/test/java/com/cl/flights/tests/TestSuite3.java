@@ -16,7 +16,7 @@ import com.cl.utils.BrowserUtils;
 import com.cl.utils.ConstantUtils;
 import com.cl.utils.ElementUtils;
 
-public class TestSuite1 {
+public class TestSuite3 {
 	public WebDriver driver;
 	public static Properties prop;
 
@@ -26,8 +26,6 @@ public class TestSuite1 {
 		prop.load(new FileInputStream(ConstantUtils.configPath));
 		driver = BrowserUtils.intailizeBrowser(prop, driver);
 		AppUtils.invokeApplication(prop, driver);
-		ElementUtils.click(driver, By.id(""));
-		ElementUtils.type(driver, By.id(""), "dfgfdghfrgh");
 		ElementUtils.click(driver, By.id(""));
 	}
 
